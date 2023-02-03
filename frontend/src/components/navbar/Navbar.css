@@ -1,0 +1,101 @@
+/* 導覽列 */
+.navbar{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.navbar-menu{
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu .navbar-logo{
+    width: 220px;
+}
+.navbar-menu .main-navbar{
+    display: flex;
+    align-items: center;
+}
+.main-navbar .btn-link{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3f5d45;
+    padding: 5px 0px;
+    margin: 0px 20px;
+    position: relative;
+}
+.main-navbar .btn-link::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3f5d45;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+.main-navbar .btn-link:hover::before{
+    transform: scaleX(1);
+}
+.main-navbar .btn-link-login{
+	cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f5d45;
+    background-color: #ffe180;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-left: 30px;
+    transition: color 0.5s ease,background-color 0.5s ease;
+}
+.main-navbar .btn-link-login:hover{
+    color: #fff;
+    background-color: #3f5d45;
+}
+.navbar-menu .btn-toggle{
+    display: none;
+    cursor: pointer;
+    color: #3f5d45;
+    transition: opacity 0.5s ease;
+}
+.navbar-menu .btn-toggle:hover{
+    opacity: 0.9;
+}
+@media screen and (max-width: 768px){
+    .navbar-menu .btn-toggle{
+        display: flex;
+    }
+    .navbar-menu .main-navbar{
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        z-index: -1;
+        transform: translateY(-160%);
+        transition: transform 0.5s ease;
+    }
+    .navbar-menu .main-navbar-open{
+        transform: translateY(0px);
+    }
+    .main-navbar .btn-link{
+        margin: 20px auto;
+    }
+    .main-navbar .btn-link-login{
+        width: 80%;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0px auto 20px;
+    }
+}

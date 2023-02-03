@@ -1,0 +1,52 @@
+.message{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+	text-align: center;
+    color: #fff;
+    border-radius: 5px;
+	padding: 12px 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.error{
+    background-color: #ff6562;
+}
+.success{
+    background-color: #00c07f;
+}
+.message-close{
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+
+.bg-loading{
+    background-color: #3f5d45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+}
+.loading-icon{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    animation: spin infinite 3s linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

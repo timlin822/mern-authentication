@@ -1,0 +1,31 @@
+/* 背景 */
+.bg-height{
+  min-height: 100vh;
+}
+
+/* container */
+.section-padding{
+  padding: 120px 0px 60px;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-padding{
+  padding: 0px 120px;
+}
+@media screen and (max-width: 1200px){
+  .container-padding{
+    padding: 0px 80px;
+  }
+}
+@media screen and (max-width: 768px){
+  .container-padding{
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 576px){
+  .container-padding{
+    padding: 0px 20px;
+  }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+img{
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+input,button,select,textarea{
+  border: none;
+  outline: none;
+}
+table,th,td{
+  border-collapse: collapse;
+}
